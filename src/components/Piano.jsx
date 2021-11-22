@@ -4,10 +4,10 @@ import { isKeyUsed, isModifierKeyClicked } from "../utils/key"
 import { editClickedNote, findNote } from "../utils/note"
 import Instrument from "./core/Instruments"
 import Video from "./core/Video";
-import mov from "../assets/videos/fog.webm"
+import mov from "../assets/videos/fog.mov"
 import "./Piano.css"
 
-const Piano = (props) => {
+const Piano = () => {
   const { state, setState } = useContext(NoteContext)
 
   const handleWindowClickedNote = useCallback((key, bool) => {
